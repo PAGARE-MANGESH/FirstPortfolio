@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FAVICONS ===============-->
+
+  <link rel="icon" type="image/x-icon" href="profile-pic.png" />
+
+  <!--=============== FontFamily ===============-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+  <!--=============== CSS ===============-->
+
+  <link rel="stylesheet" href="Style.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <!-- font-awesome  -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- skill icons  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <!-- page animation  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+  <title>My Portfolio</title>
+
+</head>
+
+<body>
+
+  <!--=============== HEADER ===============-->
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="profile-pic.png" target="_blank" data-aos="fade-right" data-aos-delay="450">
+        <img src="profile-pic.png" alt="logo" class="nav__logo" />
+      </a>
+
+
+      <!-- <a href="#Contact" class="nav__logo">MNG</a> -->
+
+      <!-- <img src="gif.gif" alt="" class="" /> -->
+
+      <!-- mobile screen logo -->
+
+
+      <!-- <img
+          src="NavLogo.png"
+          alt="logo"
+          class="nav__img"
+          style="height: 90%; width: 20%"
+        /> -->
+
+
+
+      <center class="nav__img" style="height: 90%; width: 20%">
+        <h3> Mangesh </h3>
+      </center>
+
+
+
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link" title="Home" data-aos="fade-up" data-aos-delay="350">
+              <i class="bx bx-home-alt nav__icon"></i>
+              <span class="nav__name"></span>
+
+              <!-- home -->
+            </a>
+          </li>
+
+          <li class="nav__item">
+
+            <a href="#about" class="nav__link" title="about" data-aos="fade-down" data-aos-delay="370">
+              <i class="bx bx-user nav__icon"></i>
+              <span class="nav__name"></span>
+
+              <!-- about -->
+
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#skills" class="nav__link" title="skills" data-aos="fade-up" data-aos-delay="390">
+              <i class="bx bx-book-alt nav__icon"></i>
+              <span class="nav__name"></span>
+
+              <!-- Skills -->
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link" title="portfolio" data-aos="fade-down" data-aos-delay="410">
+              <i class="bx bx-briefcase-alt nav__icon"></i>
+              <span class="nav__name"></span>
+
+              <!-- Portfolio -->
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#Contact" class="nav__link" title="Contact" data-aos="fade-up" data-aos-delay="430">
+              <i class="bx bx-message-square-detail nav__icon"></i>
+              <span class="nav__name"></span>
+
+              <!-- Contactme -->
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#Contact" class="nav__link" title="Contact" data-aos="fade-up" data-aos-delay="430">
+              <label class="switch">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g fill="#ffd43b">
+                      <circle r="5" cy="12" cx="12"></circle>
+                      <path
+                        d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                      </path>
+                    </g>
+                  </svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                    </path>
+                  </svg></span>
+                <input type="checkbox" class="input" onclick="myFunction()" />
+                <span class="slider"> </span>
+              </label>
+              <!-- Contactme -->
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <img src="boysvg.png" alt="" class="nav__img" /> -->
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!--=============== HOME ===============-->
+
+    <section class="container section section__height" id="home">
+
+      <!-- <h2 class="section__title">Home</h2> -->
+
+      <div class="container-H">
+        <div class="left" data-aos="fade-up" data-aos-delay="350">
+          <ul id="HtextContainer">
+            <li class="Htext"> Hello </li>
+            <li class="Htext">I'm a <span id="word"></span> </li>
+          </ul>
+        </div>
+
+        <div class="right" data-aos="fade-left" data-aos-delay="350">
+          <img src="colorkit.svg" alt="Image" id="A-img2" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- scoll btn  -->
+
+      <center class="text-center" style="margin-top: 30px">
+        <a href="#about">
+          <div class="scrolldown" style="--color: skyblue">
+            <div class="chevrons">
+              <div class="chevrondown"></div>
+              <div class="chevrondown"></div>
+            </div>
+          </div>
+        </a>
+
+      </center>
+
+    </section>
+
+    <!--=============== ABOUT ===============-->
+
+    <section class="container section section__height" id="about">
+      <h2 class="section__title">About</h2>
+      <div class="About-container" id="targetElement">
+        <div class="leftSide" data-aos="fade-right" data-aos-delay="350">
+          <img src="profile-pic.png" alt="Image" id="A-img" />
+        </div>
+
+        <div class="rightSide" data-aos="fade-up" data-aos-delay="350">
+          <h1 id="A-title">Mangesh Pagare</h1>
+          <p id="A_Web">
+            I'm Mangesh Pagare And I'm a BCS Second Year Student At Dr.
+            Babasaheb Ambedkar Marathwada University, And Now I'm Able To Make
+            Eye-Capture And Interactive Web Pages And Also Responsive.<br />
+            And also i've done a vertual intership at BharatIntern and I Got
+            The Complation Certificate.<br />
+            <br />
+          </p>
+
+          <ul>
+            <caption>
+              My Hubbies
+            </caption>
+            <li> Explore UI/UX Design </li>
+            <li> Learn New Technologies </li>
+            <li> Build a Responsive Design </li>
+          </ul>
+
+          <!-- </P> -->
+
+          <center id="btn">
+
+            <a href="myResume.pdf" target="_blank" id="resume">
+              <button class="button" type="button" onclick="Resume()">
+                <span class="button__text"> Download CV </span>
+                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
+                    id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
+                    <path
+                      d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z">
+                    </path>
+                    <path
+                      d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z">
+                    </path>
+                    <path
+                      d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z">
+                    </path>
+                  </svg></span>
+              </button>
+            </a>
+          </center>
+        </div>
+      </div>
+      <br />
+      <br />
+      <center id="scollbtn2">
+        <a href="#skills">
+          <div class="scrolldown" style="--color: skyblue">
+            <div class="chevrons">
+              <div class="chevrondown"></div>
+              <div class="chevrondown"></div>
+            </div>
+          </div>
+        </a>
+      </center>
+    </section>
+
+    <!--=============== SKILLS ===============-->
+
+    <section class="container section section__height" id="skills">
+      <h2 class="section__title">Skill</h2>
+
+      <div class="skills-container">
+        <div class="skill" data-aos="fade-right" data-aos-delay="350">
+          HTML [ 70% ]
+        </div>
+
+        <div class="skill" data-aos="fade-up" data-aos-delay="350">
+          CSS [ 60% ]
+        </div>
+
+        <div class="skill" data-aos="fade-down" data-aos-delay="350">
+          JAVASCRIPT [ 50% ]
+        </div>
+
+        <div class="skill" data-aos="fade-left" data-aos-delay="350">
+          MYSQL [ 50% ]
+        </div>
+
+        <div class="skill" data-aos="fade-right" data-aos-delay="350">
+          BOOTSTRAP [ 50% ]
+        </div>
+
+        <div class="skill" data-aos="fade-up" data-aos-delay="350">
+          TILWIND-CSS [ 45% ]
+        </div>
+
+        <div class="skill" data-aos="fade-down" data-aos-delay="350">
+          PHOTOSHOP [ 50% ]
+        </div>
+
+        <div class="skill" data-aos="fade-left" data-aos-delay="350">
+          CANVA [ 80% ]
+        </div>
+
+        <div class="skill" data-aos="fade-right" data-aos-delay="350">
+          FIGMA [ 70% ]
+        </div>
+
+        <div class="skill" data-aos="fade-left" data-aos-delay="350">
+          WONDERSHERE_FILMORA [ 80% ]
+        </div>
+        <br>
+      </div>
+
+
+      <center id="scollbtn3">
+        <a href="#portfolio">
+          <div class="scrolldown" style="--color: skyblue">
+            <div class="chevrons">
+              <div class="chevrondown"></div>
+              <div class="chevrondown"></div>
+            </div>
+          </div>
+        </a>
+      </center>
+    </section>
+
+
+    <!--=============== PORTFOLIO =================-->
+
+    <section class="container section section__height" id="portfolio">
+      <h2 class="section__title" id="portfolio_title">Portfolio</h2>
+      <center>
+        <h3>Here Are My Some Projects</h3>
+      </center>
+      <br />
+
+      <div class="projects-container right-to-left">
+        <div class="project" data-aos="fade-up" data-aos-delay="350">
+          <img id="profile-image" src="projectlogo.svg" alt="Profile Image" />
+
+          <div class="project-description" id="project2-description">
+            <center>
+              <br />
+              <div class="project-title">Project 1</div>
+              <h2>Calculator</h2>
+              <br />
+              <a href="https://pagare-mangesh.github.io/calculater/" target="_blank">
+                Click TO Visit
+              </a>
+            </center>
+          </div>
+        </div>
+
+        <div class="project" data-aos="fade-down" data-aos-delay="350">
+          <img id="profile-image" src="projectlogo.svg" alt="Profile Image" />
+          <br />
+          <div class="project-description" id="project2-description">
+            <center>
+              <div class="project-title">Project 2</div>
+              <h2>Temperature Converter</h2>
+              <br />
+              <a href="https://bit.ly/45ggpFj" target="_blank">
+                Click TO Visit
+              </a>
+            </center>
+          </div>
+        </div>
+
+
+        <div class="project" data-aos="fade-down" data-aos-delay="350">
+          <img id="profile-image" src="projectlogo.svg" alt="Profile Image" />
+          <br />
+          <div class="project-description" id="project2-description">
+            <center>
+              <div class="project-title"> Project 3 </div>
+              <h2>A1_App</h2>
+              <br />
+              <a href="https://pagare-mangesh.github.io/A1/" target="_blank">
+                Click TO Visit
+              </a>
+            </center>
+          </div>
+        </div>
+
+        <!-- Add more projects as needed -->
+
+
+      </div>
+      <br /><br /><br /><br />
+      <center id="scollbtn4">
+        <a href="#Contact">
+          <div class="scrolldown" style="--color: skyblue">
+            <div class="chevrons">
+              <div class="chevrondown"></div>
+              <div class="chevrondown"></div>
+            </div>
+          </div>
+        </a>
+      </center>
+    </section>
+
+
+    <!--=============== CONTACTME ===============-->
+
+    <section class="container section section__height" id="Contact">
+
+      <h2 class="section__title">ContactMe</h2>
+      <footer class="responsive-footer d-flex justify-content-center align-items-center" data-aos="fade-up"
+        data-aos-delay="350">
+        <img src="undraw_join_re_w1lh.svg" alt="logo" class="footer__logo" />
+
+        <br />
+        <!-- <p >Contact :- +91 8668325464</p> -->
+        <br />
+        <p>Address :- Maharastra, Gangapur, 431109 </p>
+        <br>
+
+        <a href="mailto:mangeshpagare011@gmail.com" target="_blank" style="color: #1e1d1d" data-aos="fade-up"
+          data-aos-delay="350">
+
+          E-Mail :- mangeshpagare011@gmail.com
+
+        </a>
+
+        <br />
+
+        <center>
+          <div class="social-links">
+
+            <div class="share">
+
+              <!-- instagram   -->
+
+              <button class="btn1" style="margin-right:5px;" title="Instagram" data-aos="fade-down"
+                data-aos-delay="350">
+                <svg fill-rule="nonzero" height="30px" width="30px" viewBox="0,0,256,256"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="instagram">
+                  <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                    font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                    stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero">
+                    <g transform="scale(8,8)">
+                      <path
+                        d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <span class="tooltiptext1">
+                  <div class="card">
+                    <svg fill="#000000" width="24px" viewBox="0 0 24 24" height="24px"
+                      xmlns="http://www.w3.org/2000/svg" class="account">
+                      <path fill="none" d="M0 0h24v24H0V0z"></path>
+                      <path
+                        d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="username"></div>
+                </span>
+              </button>
+
+              <!-- twitter -->
+
+              <button class="btn2" style="margin-right:5px;" title="Twitter" data-aos="fade-up" data-aos-delay="350">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" viewBox="0 0 24 24"
+                  height="20"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                </svg>
+
+                <a href="https://twitter.com/Mangesh866" target="_blank">
+                  <span class="tooltiptext2">
+                    <div class="card">
+                      <svg fill="#000000" width="24px" viewBox="0 0 24 24" height="24px"
+                        xmlns="http://www.w3.org/2000/svg" class="account">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="username"></div>
+                  </span>
+                </a>
+              </button>
+
+
+              <!-- github  -->
+
+              <a href="https://github.com/PAGARE-MANGESH" target="_blank">
+                <button class="btn3" style="margin-right:17px;" title="Github" data-aos="fade-up" data-aos-delay="350">
+                  <svg height="30px" width="30px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="git">
+                    <path
+                      d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                    </path>
+                  </svg>
+                  <span class="tooltiptext3">
+                    <div class="card">
+                      <svg fill="#000000" width="24px" viewBox="0 0 24 24" height="24px"
+                        xmlns="http://www.w3.org/2000/svg" class="account">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="username"></div>
+                  </span>
+                </button>
+              </a>
+
+              <!-- linkedin  -->
+
+
+              <button class="btn2" style="margin-left:-13px;" title="Linkedin" data-aos="fade-down"
+                data-aos-delay="350">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20px" viewBox="0 0 24 24"
+                  height="20px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                </svg>
+                <a href="https://www.linkedin.com/in/mangesh-pagare-41a5b826a/" target="_blank">
+                  <span class="tooltiptext2">
+                    <div class="card">
+                      <svg fill="#000000" width="20px" viewBox="0 0 24 24" height="20px"
+                        xmlns="http://www.w3.org/2000/svg" class="account">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0
+                         9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 
+                         8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path>
+                      </svg>
+                    </div>
+                    <div class="username"></div>
+                  </span>
+                </a>
+              </button>
+
+            </div>
+          </div>
+          <br>
+        </center>
+      </footer>
+
+
+      <center>
+        <a href="#home">
+          <button class="Fbutton" data-aos="fade-up" data-aos-delay="350">
+            <svg class="svgIcon" viewBox="0 0 384 512">
+              <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+              </path>
+            </svg></button></a>
+      </center>
+
+    </section>
+
+
+  </main>
+
+  <!--=============== MAIN JS ================= -->
+
+  <script src="logic.js"></script>
+
+</body>
+
+</html>
