@@ -357,7 +357,7 @@ main {
 .Htext {
   font-size: 40px;
   font-weight: bold;
- color: #556eac;
+  color: #556eac;
 }
 
 
@@ -995,6 +995,8 @@ footer {
   text-align: center;
   margin-top: -45px;
   /* overflow: hidden; */
+
+  padding-bottom: 20px;
   justify-content: center;
 }
 
