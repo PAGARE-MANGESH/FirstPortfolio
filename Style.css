@@ -357,7 +357,7 @@ main {
 .Htext {
   font-size: 40px;
   font-weight: bold;
-  color: #556eac;
+  /* color: #556eac; */
 }
 
 
@@ -383,14 +383,6 @@ main {
   from, to { border-color: transparent }
   50% { border-color: #333; }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -525,6 +517,16 @@ img {
 
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -706,6 +708,59 @@ a {
 
 
 
+/* togggle  btn Styling    */
+
+
+.toggle {
+  background-color: #fff;
+  width: 36px; /* Reduced width */
+  height: 36px; /* Reduced height */
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Reduced box shadow */
+  line-height: 1;
+  /* display: flex;  */
+  justify-content: center;
+}
+
+.input {
+  display: none;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
+}
+
+.icon--moon {
+  transition-delay: 200ms;
+}
+
+.icon--sun {
+  transform: scale(0);
+}
+
+#switch:checked + .icon--moon {
+  transform: rotate(360deg) scale(0);
+}
+
+#switch:checked ~ .icon--sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
+}
+
+.w-8 {
+  width: 2rem; /* Ensure consistency */
+}
+
+
+
+
+
+
 /* about page here  */
 
 .About-container {
@@ -774,11 +829,8 @@ a {
   height: auto;
   margin-top: 5px;
   filter: drop-shadow(15px 50px 50px #39383a);
-
   /* margin: 0 auto; */
 }
-
-
 
 
 
@@ -786,9 +838,7 @@ a {
    width: 100%;
    height: 100%;
    position: relative;
-
 }
-
 
 
 #A-title {
@@ -924,7 +974,9 @@ a {
 /* portfolio page styling  */
 
 #portfolio_title {
+
   margin-top: -10px;
+
 }
 
 .projects-container {
@@ -947,6 +999,7 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.275),
     0 6px 20px 0 rgba(0, 0, 0, 0.298);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 80px;
 }
 
 .project:hover {
@@ -993,10 +1046,10 @@ footer {
   max-width: auto;
   margin-bottom: 50px;
   text-align: center;
-  margin-top: -45px;
+  margin-top: -55px;
   /* overflow: hidden; */
 
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   justify-content: center;
 }
 
@@ -1196,7 +1249,8 @@ footer {
   transition-duration: 0.3s;
   overflow: hidden;
   position: relative;
-  margin-bottom: 50px;
+
+
 }
 
 .svgIcon {
