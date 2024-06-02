@@ -23,6 +23,8 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+
+
 }
 
 @media screen and (min-width: 968px) {
@@ -842,7 +844,9 @@ a {
 
 
 #A-title {
-  color: rgb(90, 88, 86);
+  /* color: rgb(90, 88, 86); */
+  color: rgba(68, 162, 196, 0.671);
+
   margin-bottom: 35px;
   overflow: hidden;
 }
@@ -952,6 +956,8 @@ a {
 
 .skill {
   color: rgb(255, 252, 252);
+  /* color: rgba(68, 162, 196, 0.671); */
+
   background-color: #52684c;
   border: 1px solid #a19d9d;
   border-radius: 8px;
