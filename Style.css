@@ -23,8 +23,6 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
-
-
 }
 
 @media screen and (min-width: 968px) {
@@ -313,7 +311,6 @@ img {
   .active-link::before {
     bottom: -0.75rem;
   }
-
 }
 
 /* For large devices */
@@ -354,15 +351,12 @@ main {
   margin-top: 50px;
 }
 
-
 /* text changer's styling  */
 .Htext {
   font-size: 40px;
   font-weight: bold;
   /* color: #556eac; */
 }
-
-
 
 #word {
   font-size: 40px;
@@ -372,21 +366,27 @@ main {
   overflow: hidden;
   position: relative;
   transition: 1s ease;
-  border-right: .15em solid rgb(0, 0, 0);
-  animation: typing 1s steps(10, end), blink-caret .75s step-end infinite;
-  
+  border-right: 0.15em solid rgb(60, 113, 129);
+  animation: typing 1s steps(10, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #333; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #5197b1a0;
+  }
 }
-
-
 
 .left,
 h1,
@@ -412,22 +412,17 @@ img {
   /* filter: drop-shadow(0px 10px 20px rgb(70, 70, 66) 51, 48); */
 }
 
-
-#A-img2{
-  
- max-width:80%;
-  height: auto; 
-  /* margin-right: 50px; */ */
+#A-img2 {
+  max-width: 80%;
+  height: auto;
+  /* margin-right: 50px; */
   /* filter: drop-shadow(0px 10px 20px rgb(54, 54, 51) 51, 48); */
-  
-   
 }
-
 
 .H-container {
   width: 100%;
   height: auto;
-  display: flex; 
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 0px;
@@ -435,19 +430,14 @@ img {
   justify-content: space-around;
 }
 
-
 /* home right side styling */
 
 /* mobile screen  */
 
-
 @media only screen and (max-width: 600px) {
-
-
   .nav__logo {
     display: none;
   }
-
 
   .container-H {
     width: 100%;
@@ -457,23 +447,15 @@ img {
     /* display: flex; */
   }
 
-
-
   .Htext {
-
     font-size: 30px;
     font-weight: bold;
-
   }
 
-  
-  
   #word {
     font-size: 28px;
     font-weight: bold;
   }
-
-
 
   .left {
     text-align: center;
@@ -516,24 +498,9 @@ img {
   .button {
     margin-right: 25px;
   }
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 768px) {
-
   .header {
     width: 100%;
     height: auto;
@@ -557,9 +524,7 @@ img {
   }
 }
 
-
 /* scoll BTN  */
-
 
 .scrolldown {
   --color: white;
@@ -576,7 +541,6 @@ img {
   cursor: pointer;
 }
 
-
 .scrolldown::before {
   content: "";
   position: absolute;
@@ -591,7 +555,6 @@ img {
   box-sizing: border-box;
   box-shadow: 0px -5px 3px 1px #3971964d;
 }
-
 
 @keyframes scrolldown-anim {
   0% {
@@ -708,10 +671,7 @@ a {
   }
 }
 
-
-
 /* togggle  btn Styling    */
-
 
 .toggle {
   background-color: #fff;
@@ -758,11 +718,6 @@ a {
   width: 2rem; /* Ensure consistency */
 }
 
-
-
-
-
-
 /* about page here  */
 
 .About-container {
@@ -792,11 +747,7 @@ a {
   /* color: rgb(54, 53, 51); */
   /* background-color: #63616162; */
   /* filter: drop-shadow(10px 10px 10px #212122); */
- 
 }
-
-
-
 
 /* scoll style*/
 
@@ -826,7 +777,6 @@ a {
 }
 
 #A-img {
- 
   max-width: 70%;
   height: auto;
   margin-top: 5px;
@@ -834,14 +784,11 @@ a {
   /* margin: 0 auto; */
 }
 
-
-
-.img-fluid{
-   width: 100%;
-   height: 100%;
-   position: relative;
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-
 
 #A-title {
   /* color: rgb(90, 88, 86); */
@@ -941,7 +888,6 @@ a {
   }
 }
 
-
 /* SKill PAGE STYLING  */
 
 .skills-container {
@@ -978,20 +924,14 @@ a {
   margin-top: 10px;
 }
 
-
-.ProjectLink{
+.ProjectLink {
   color: var(--first-color);
-
-
-   
 }
 
 /* portfolio page styling  */
 
 #portfolio_title {
-
   margin-top: -10px;
-
 }
 
 .projects-container {
@@ -1104,10 +1044,9 @@ footer {
 
 /* hover animation  */
 
-.card{
- cursor: pointer;
+.card {
+  cursor: pointer;
 }
-
 
 #fb :hover {
   transform: translateY(-5px);
@@ -1264,8 +1203,6 @@ footer {
   transition-duration: 0.3s;
   overflow: hidden;
   position: relative;
-
-
 }
 
 .svgIcon {
@@ -1319,7 +1256,6 @@ footer {
   /* margin-left: 50px; */
   /* align-items: center; */
   justify-content: center;
-
 }
 
 .btn1 {
